@@ -1,3 +1,3 @@
-C JavaScript Python AHDL Lua
+C JavaScript Python
 
 descending
