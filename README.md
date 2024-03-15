@@ -1,3 +1,3 @@
-C JavaScript Python x86(-64) RISC-V
+C JavaScript Python x86(-64) Java RISC-V
 
 descending
