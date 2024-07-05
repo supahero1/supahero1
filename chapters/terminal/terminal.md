@@ -16,6 +16,8 @@ Note that most of the time program arguments are space separated. The only dille
 
 A command in terminal must contain itself in a single line. You can't just press enter, since that will submit the command instead of inserting a newline. Terminal will wrap text for you, but if you think that's not good enough, you can actually use newlines, as long as you escape them first with a backslash, so you first press a backslash and then you press enter. You can then see terminal waiting for more input.
 
+If you press arrow up, you can bring up the last executed command. Try pressing it again. That brought up the command before the last command, and so on. You can press arrow down to go forward if you went too far back. You don't have to retype commands from scratch if you've already executed them.
+
 Try `code`. Surprise surprise, it *SHOULD* open vscode. If it doesn't, you haven't actually installed it properly.
 
 [←](../env/env.md) | [→](../fs/fs.md)

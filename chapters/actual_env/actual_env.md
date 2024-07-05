@@ -1,4 +1,4 @@
-Now that you are a master at using the Linux terminal, we can begin rolling with the actual code. If you haven't trained yet the knowledge of the previous chapters, please do. Heck, even give yourself a good night's sleep to digest all of it. If you go too fast, you might not remember anything by tomorrow.
+Now that you are a master at using the Linux terminal, we can begin rolling with the actual code. If you haven't trained the knowledge of the previous chapters yet, please do. Heck, even give yourself a good night's sleep to digest all of it. If you go too fast, you might not remember anything by tomorrow.
 
 Let's start things off by setting some file system structure. Do `mkdir code; cd code`. Please create a new directory inside of `code` for every new chapter if you need to write any code. That will make things easier for both of us.
 
