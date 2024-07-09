@@ -1,8 +1,6 @@
 Once you get Ubuntu working one way or the other, find the terminal and open it. Experiment with it. You can type in it but it's kind of funny, isn't it. It's all monospace and it shouts at you if you don't do the things it expects. Try typing `help` in it (and press enter afterwards to submit). Try `date`. Try `top`. That command displays all processes, with the most active ones being at the top. To quit it, press the letter `q` once (for Quit). Now try `watch -n 1 date`. That command will display you the result of the `date` command every second. You can't quit it with `q` now - you have to press `CTRL + C` to "interrupt" the program. Try `touch test.txt`. That will create an empty file called `test.txt` in the current working directory.
 
-Essentially, terminal (or commandline) allows you to directly communicate with the filesystem, the kernel, all programs. It allows you to do everything, but via text, no graphical interface. But when working remotely, with a server thousands of miles away from you, this is the only option. The faster you get accustomed to it, the better. Once you become an expert at it, you will find it to be faster than using GUI, since that takes lengthy navigation and mouse movements.
-
-Terminal accepts text as input and it gives text as output. The output may be your usual output or an error output that kind of has priority and is shown to you as soon as possible once it's generated. You don't need to know the details of that for now.
+Essentially, terminal (or commandline) allows you to directly communicate with the filesystem, the kernel, all programs. It allows you to do everything, but via text, no graphical interface. When working remotely, with a server thousands of miles away from you, this is the only option. The faster you get accustomed to it, the better. Once you become an expert at it, you will find it to be faster than using GUI, since that takes lengthy navigation and mouse movements.
 
 You will find documentation really helpful from here on out, to lead you. As shown before, programs wildly differ from each other. Some of them accept arguments (data to know what to do), but how to pass it? What do they spit out in return? How to stop their execution?
 
@@ -19,5 +17,13 @@ A command in terminal must contain itself in a single line. You can't just press
 If you press arrow up, you can bring up the last executed command. Try pressing it again. That brought up the command before the last command, and so on. You can press arrow down to go forward if you went too far back. You don't have to retype commands from scratch if you've already executed them.
 
 Try `code`. Surprise surprise, it *SHOULD* open vscode. If it doesn't, you haven't actually installed it properly.
+
+Some of the commands that you execute in terminal resolve to normal programs that exist somewhere in the system (usually `/usr/bin` or `/usr/local/bin` are first to be searched). On Linux there's no extensions for executables like on Windows - any file can be executable, with any name or extension, if you set it to be executable. There's no `.exe`, there's normal files named like for instance `rm` that reside in system folders. You can pass arguments and input to them and get some output via terminal in an easy way. To find where a particular program resides, you can run `which <program>` like `which rm`. If it outputs a path like `/usr/bin/rm`, it means that it's an actual program, otherwise (try `which cd`, it outputs nothing) it's a built-in shell command.
+
+Programs accept arguments and input, and these are 2 different things. Arguments are the things you pass to the program after the program name, always. In fact, you don't have to specify just the program name, since it may not be in one of the system folders - you can also specify a path to it, absolute or relative, but more on that in the next chapter. You already know more or less what arguments are, it's just data that steers how the program behaves right off the bat. Input to a program, however, is something you can pass continuously for as long as the program lives, and you can only do it once the program has started. Of course, for program arguments to be parsed and understood by it, that too occurs technically after the program starts, but input processing usually occurs after the program has been set up with arguments.
+
+Each program also by default has 2 outputs - the normal one that terminal shows you, and also an error one that is not buffered, and thus is shown to you as soon as possible.
+
+Terminal is a powerful tool. It allows you to do much more, like steer the input and output of programs, chain them together, even write code. More on that later.
 
 [←](../env/env.md) | [→](../fs/fs.md)

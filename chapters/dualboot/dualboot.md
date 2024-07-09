@@ -112,6 +112,8 @@ Click the three dots on your dash at the bottom to go to application menu. Searc
 
 ![Tweaks Appearance](6.png)
 
+In fonts, change the monospace font to `Inconsolata` size 13.
+
 `reboot`
 
 Your ubuntu should look like this now:
@@ -122,7 +124,7 @@ Get [code](https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-
 
 `cd ~/Downloads; sudo dpkg -i code`, press Tab to autocomplete, enter.
 
-`sudo apt install curl nano htop fuse openjdk-21-jdk perl autoconf nasm automake gperf autogen guile-3.0 gettext m4 gawk fonts-noto g++-12 fonts-inconsolata`
+`sudo apt install curl nano htop fuse openjdk-21-jdk perl autoconf nasm automake gperf autogen guile-3.0 gettext m4 gawk fonts-noto g++-12 fonts-inconsolata gcc-multilib g++-multilib`
 
 Get [steam](https://cdn.akamai.steamstatic.com/client/installer/steam.deb) if you want now. `sudo dpkg -i steam.deb`. Opening steam after this will make it ask you to install additional packages to make it work. Just press enter and go along with it.
 
