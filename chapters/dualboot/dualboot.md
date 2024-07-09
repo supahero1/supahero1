@@ -188,6 +188,8 @@ Click 3 dots in the top right of terminal -> Preferences, then click on the Unna
 
 `cd /tmp && git clone https://github.com/libsdl-org/SDL --depth 1 && cd SDL && mkdir build && cd build && cmake -DCMAKE_BUILD_TYPE=Release .. && cmake --build . --config Release --parallel && sudo cmake --install . --config Release && cd -`
 
+`ssh-keygen`
+
 `sudo apt autoremove`
 
 Good enough for starters.
